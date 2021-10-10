@@ -1,9 +1,12 @@
+import java.util.Scanner;
 
 public class Voto {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int age = 16;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Digite a idade:");
+		int age = scan.nextInt();
+		scan.close();
 		
 		if(age >= 18) 
 			System.out.println("Você deve votar");
